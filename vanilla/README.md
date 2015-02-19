@@ -126,7 +126,9 @@ Now go to our Ubuntu computers terminal and execute
 <pre><code>cd /home/'YOUR_USER_NAME'/export/rootfs/lib/modules</pre></code>
 Execute following commands to install vanilla kernel to BBB
 <pre><code>sudo rsync -avz 3* root@192.168.'1.76':/lib/modules/</pre></code>
-<pre><code>sudo rsync /home/'proficnc'/u-boot-2013.10/kernel/kernel/arch/arm/boot/zImage root@192.168.1.3 :/boot/uboot/</pre></code>
+<pre><code>sudo rsync /home/'proficnc'/u-boot-2013.10/kernel/kernel/arch/arm/boot/zImage root@192.168.'1.76' :/boot/uboot/</pre></code>
+
+replace ' ' with BBB's ip address
 
 After successful execution go to BBB terminal and write
 <pre><code> ls /lib/modules</pre></code>
